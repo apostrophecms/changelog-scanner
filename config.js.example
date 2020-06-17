@@ -1,0 +1,9 @@
+module.exports = {
+  // scan all repos in these github orgs.
+  orgs: [ 'apostrophecms' ],
+  
+  // This must be a github API access token.
+  // See: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+  // No extra privileges needed unless you want private repos scanned.
+  token: 'go-get-your-own'
+};
