@@ -1,0 +1,1466 @@
+*** apostrophecms/apostrophe
+missing changelog entry for hotfix released last week, no code changes
+Tom Boutell
+tom@punkave.com
+2020-06-17T13:29:34Z
+
+Merge pull request #2221 from apostrophecms/hotfix/color-field-unblessed
+
+dont alter color field options midflight
+GitHub
+noreply@github.com
+2020-06-10T19:10:33Z
+
+dont alter color field options midflight
+Stuart Romanek
+stuart@apostrophecms.com
+2020-06-10T19:04:47Z
+
+Merge pull request #2220 from geoffdimasi/patch-1
+
+Update LICENSE.md
+GitHub
+noreply@github.com
+2020-06-09T20:28:52Z
+
+Update LICENSE.md
+GitHub
+noreply@github.com
+2020-06-09T20:02:08Z
+
+Merge branch 'contextual-workflow-ux'
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T13:50:00Z
+
+Merge branch 'contextual-workflow-ux' of https://github.com/apostrophecms/apostrophe into contextual-workflow-ux
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T13:49:39Z
+
+changelog
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T13:48:50Z
+
+Merge pull request #2219 from apostrophecms/contextual-workflow-ux
+
+if workflow is present do not default published to false just because…
+GitHub
+noreply@github.com
+2020-06-09T13:42:56Z
+
+Merge branch 'master' into contextual-workflow-ux
+GitHub
+noreply@github.com
+2020-06-09T13:42:45Z
+
+if workflow is present do not default published to false just because a piece type is contextual. There is already a good opportunity to review it affored by workflow.
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T12:37:40Z
+
+Merge pull request #2218 from apostrophecms/clone-permanent-scalars
+
+allow clonePermanent to do something reasonable if called with a scal…
+GitHub
+noreply@github.com
+2020-06-04T19:12:05Z
+
+Merge branch 'master' into clone-permanent-scalars
+GitHub
+noreply@github.com
+2020-06-04T19:11:20Z
+
+*** apostrophecms/apostrophe-events
+Improves help text and labeling (#46)
+GitHub
+noreply@github.com
+2020-06-09T13:33:34Z
+
+*** apostrophecms/sanitize-html
+Updates changelog and bumps version (#370)
+GitHub
+noreply@github.com
+2020-06-16T16:36:03Z
+
+Merge pull request #360 from StanisLove/regexped-allowed-iframe-hosts
+
+Introduce allowedIframeDomains
+GitHub
+noreply@github.com
+2020-06-11T18:13:25Z
+
+Update README.md
+Stanislav Kravchenko
+stankra@yandex.ru
+2020-06-11T07:57:30Z
+
+Allow top-level domains in allowedIframeDomains
+Stanislav Kravchenko
+stankra@yandex.ru
+2020-06-11T06:36:00Z
+
+*** apostrophecms/apostrophe-documentation
+Removes the outdated line about date needing def:null (#282)
+GitHub
+noreply@github.com
+2020-06-16T20:13:01Z
+
+Fixes typo (#280)
+GitHub
+noreply@github.com
+2020-06-16T14:28:53Z
+
+Adds more documentation for sanitize-html config (#279)
+
+* Rearranges ckeditor page
+
+* Adds more documentation for sanitize-html config
+
+* Replaces pseudo arrows with unicode arrows
+
+* Rearranges information
+GitHub
+noreply@github.com
+2020-06-15T16:47:10Z
+
+Merge pull request #277 from apostrophecms/fix-addfilter-in-templates
+
+Fix `addFilter` command in Nunjucks helpers
+GitHub
+noreply@github.com
+2020-06-09T16:18:26Z
+
+Merge pull request #276 from apostrophecms/dependabot/npm_and_yarn/websocket-extensions-0.1.4
+
+Bump websocket-extensions from 0.1.3 to 0.1.4
+GitHub
+noreply@github.com
+2020-06-09T13:46:37Z
+
+Fix `addFilter` command in Nunjucks helpers
+No `addFilters` function in `apostrophe/lib/modules/apostrophe-templates` but  `addFilter` instead
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-09T08:17:19Z
+
+Bump websocket-extensions from 0.1.3 to 0.1.4
+
+Bumps [websocket-extensions](https://github.com/faye/websocket-extensions-node) from 0.1.3 to 0.1.4.
+- [Release notes](https://github.com/faye/websocket-extensions-node/releases)
+- [Changelog](https://github.com/faye/websocket-extensions-node/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/faye/websocket-extensions-node/compare/0.1.3...0.1.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+GitHub
+noreply@github.com
+2020-06-08T06:07:04Z
+
+Generates docs for apos 2.107.1 (#274)
+
+* Generates docs for updated apos
+
+* Updates redirects
+GitHub
+noreply@github.com
+2020-06-04T15:03:58Z
+
+*** apostrophecms/apostrophe-workflow
+Merge pull request #318 from apostrophecms/restore-submitted-button
+
+fix the submitted "button" and generally clean up the logic around di…
+GitHub
+noreply@github.com
+2020-06-17T14:06:32Z
+
+fix the submitted "button" and generally clean up the logic around display of the workflow buttons with maximum bc and minimum structural change
+Tom Boutell
+tom@punkave.com
+2020-06-17T13:32:51Z
+
+Merge pull request #317 from apostrophecms/workflowModified-event-and-fewer-submit-buttons
+
+show the submit button only when you cannot commit but can submit, an…
+GitHub
+noreply@github.com
+2020-06-16T19:53:22Z
+
+Bumps number
+Alex Bea
+abea@mailbox.org
+2020-06-16T19:53:10Z
+
+name change
+Tom Boutell
+tom@punkave.com
+2020-06-16T19:45:42Z
+
+show the submit button only when you cannot commit but can submit, and support a new event for refreshing the workflow UI
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T13:41:45Z
+
+*** apostrophecms/apostrophe-pieces-export
+2.3.0 release
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-03T20:03:32Z
+
+*** apostrophecms/apostrophe-palette
+Merge pull request #23 from apostrophecms/emit-workflowModified
+
+emit workflowModified event, namespace javascript functions
+GitHub
+noreply@github.com
+2020-06-09T23:36:34Z
+
+oops fixed the namespacing
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T13:46:46Z
+
+emit workflowModified event, namespace javascript functions
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T13:39:01Z
+
+*** apostrophecms/kimpton
+Merge pull request #151 from apostrophecms/hotfix/bless-thy-color-field
+
+make color field override options local to the override instead of at…
+GitHub
+noreply@github.com
+2020-06-04T18:46:53Z
+
+make color field override options local to the override instead of attaching them to the field which causes blessing mismatch. also update apos-palette
+Stuart Romanek
+stuart@apostrophecms.com
+2020-06-04T18:28:56Z
+
+*** apostrophecms/apostrophe-enterprise-testbed
+Merge pull request #39 from apostrophecms/submitters
+
+Test with a distinct submitter user
+GitHub
+noreply@github.com
+2020-06-17T15:08:30Z
+
+correct mongodump, new tests for submit
+Tom Boutell
+tom@punkave.com
+2020-06-17T13:37:02Z
+
+distinct account for someone who can edit any page but can only submit
+Tom Boutell
+tom@punkave.com
+2020-06-17T12:22:39Z
+
+*** apostrophecms/apostrophe-nightwatch-tools
+Merge pull request #11 from apostrophecms/pass-credentials
+
+username and password can be passed to steps.login
+GitHub
+noreply@github.com
+2020-06-17T14:12:07Z
+
+username and password can be passed to steps.login/
+Tom Boutell
+tom@punkave.com
+2020-06-17T13:31:05Z
+
+*** apostrophecms/eslint-config-apostrophe
+Merge pull request #4 from apostrophecms/enforce-single-quotes
+
+update quote to error
+GitHub
+noreply@github.com
+2020-06-17T14:35:36Z
+
+Update index.js
+
+should have been `warn` not `warning`
+GitHub
+noreply@github.com
+2020-06-17T14:35:13Z
+
+Updates version and changelog
+Alex Bea
+abea@mailbox.org
+2020-06-17T14:32:00Z
+
+downgrade to warning
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-17T14:25:29Z
+
+update quote to error
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-17T14:19:27Z
+
+*** apostrophecms/apostrophe-rich-text-permalinks
+Merge pull request #8 from apostrophecms/projection-docs
+
+document configuring the projection properly
+GitHub
+noreply@github.com
+2020-06-16T19:59:34Z
+
+document configuring the projection properly
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-12T19:01:52Z
+
+Merge pull request #7 from apostrophecms/4-text-override
+
+Defaults to maintaining existing text
+GitHub
+noreply@github.com
+2020-06-04T19:31:31Z
+
+Updates changelog and version number
+Alex Bea
+abea@mailbox.org
+2020-06-03T22:20:02Z
+
+Defaults to maintaining existing text
+Alex Bea
+abea@mailbox.org
+2020-06-03T22:15:19Z
+
+*** apostrophecms/a3-test-1
+depend on 3.0 branch
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-11T15:54:21Z
+
+fix nested template bug, introduce rich text toolbar test
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-10T15:11:00Z
+
+*** apostrophecms/apostrophe-storybook
+Merge pull request #98 from apostrophecms/docs-manager
+
+Docs manager
+GitHub
+noreply@github.com
+2020-06-16T14:59:19Z
+
+Factors in modalParent code
+Alex Bea
+abea@mailbox.org
+2020-06-16T14:25:15Z
+
+Merge branch 'develop' into docs-manager
+Alex Bea
+abea@mailbox.org
+2020-06-16T14:05:00Z
+
+Uses primary color for toolbar checkbox
+Alex Bea
+abea@mailbox.org
+2020-06-15T19:18:07Z
+
+Removes unused methods and properties
+Alex Bea
+abea@mailbox.org
+2020-06-15T19:01:27Z
+
+Removes new toggle method
+Alex Bea
+abea@mailbox.org
+2020-06-15T18:54:42Z
+
+Merge branch 'docs-manager' of github.com:apostrophecms/apostrophe-storybook into docs-manager
+Alex Bea
+abea@mailbox.org
+2020-06-15T18:33:18Z
+
+Adds widgets editor and updates modal components (#100)
+
+* wip
+
+* Styles always-visible edit modal
+
+* Introduces the Modal Dance
+
+* Moves modal parent logic into a mixin; updates other modal parents
+
+* Removes dead code
+GitHub
+noreply@github.com
+2020-06-15T15:10:41Z
+
+Removes the deprecated table component (#99)
+
+* Clean up
+
+* Removes table component
+GitHub
+noreply@github.com
+2020-06-15T13:57:57Z
+
+Clean up
+Alex Bea
+abea@mailbox.org
+2020-06-11T20:17:27Z
+
+Removes unneeded method
+Alex Bea
+abea@mailbox.org
+2020-06-11T20:07:26Z
+
+Hooks up select all for pieces mgr
+Alex Bea
+abea@mailbox.org
+2020-06-11T19:41:06Z
+
+Allows checkbox toggling in media manager
+Alex Bea
+abea@mailbox.org
+2020-06-11T16:59:39Z
+
+Moves table markup directly into pieces manager vue; fixes
+Alex Bea
+abea@mailbox.org
+2020-06-11T16:59:26Z
+
+Renames to piecesManager
+Alex Bea
+abea@mailbox.org
+2020-06-10T20:23:06Z
+
+Moves table code into mixins
+Alex Bea
+abea@mailbox.org
+2020-06-10T20:20:01Z
+
+Adds table mixin file
+Alex Bea
+abea@mailbox.org
+2020-06-10T19:11:11Z
+
+AposTable eslint fixes
+Alex Bea
+abea@mailbox.org
+2020-06-10T17:55:03Z
+
+Removes modal-level selection methods
+Alex Bea
+abea@mailbox.org
+2020-06-10T17:47:19Z
+
+Imports table view into docs manager modal
+Alex Bea
+abea@mailbox.org
+2020-06-10T16:38:26Z
+
+Clones media manager component
+Alex Bea
+abea@mailbox.org
+2020-06-10T16:05:48Z
+
+Merge pull request #97 from apostrophecms/media-manager
+
+implements filterMenu
+GitHub
+noreply@github.com
+2020-06-10T13:51:31Z
+
+Merge pull request #95 from apostrophecms/55-doc-editor-modal
+
+55 doc editor modal
+GitHub
+noreply@github.com
+2020-06-10T13:50:28Z
+
+tab fix sorry bea
+=
+hello@ghbot.com
+2020-06-09T20:49:29Z
+
+merge
+=
+hello@ghbot.com
+2020-06-09T20:17:39Z
+
+dead css
+=
+hello@ghbot.com
+2020-06-09T18:57:59Z
+
+Merge branch 'develop' of github.com:apostrophecms/apostrophe-storybook into media-manager
+=
+hello@ghbot.com
+2020-06-09T18:56:57Z
+
+adds filtermenu component, implements in media manager
+=
+hello@ghbot.com
+2020-06-09T18:56:53Z
+
+Themes a progress notification (#91)
+
+* Themes a progress notification
+
+* Uses theme variables for bg gradients
+
+* Adds progress width transition
+
+* Changes progress props
+GitHub
+noreply@github.com
+2020-06-09T17:45:08Z
+
+Bump websocket-extensions from 0.1.3 to 0.1.4 (#94)
+
+Bumps [websocket-extensions](https://github.com/faye/websocket-extensions-node) from 0.1.3 to 0.1.4.
+- [Release notes](https://github.com/faye/websocket-extensions-node/releases)
+- [Changelog](https://github.com/faye/websocket-extensions-node/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/faye/websocket-extensions-node/compare/0.1.3...0.1.4)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+GitHub
+noreply@github.com
+2020-06-09T17:17:09Z
+
+Adjusts apply tag to avoid focus state visual trimming (#96)
+
+* Adjusts apply tag to avoid focus state visual trimming
+
+* vue eslint
+GitHub
+noreply@github.com
+2020-06-09T15:56:54Z
+
+Merge pull request #93 from apostrophecms/responsive-framework
+
+Adds a responsive framework
+GitHub
+noreply@github.com
+2020-06-09T13:44:00Z
+
+Comments out media-down
+Alex Bea
+abea@mailbox.org
+2020-06-09T13:41:25Z
+
+Merge branch 'develop' of github.com:apostrophecms/apostrophe-storybook into develop
+=
+hello@ghbot.com
+2020-06-09T00:07:28Z
+
+theme fiddlin
+=
+hello@ghbot.com
+2020-06-09T00:07:23Z
+
+merge
+=
+hello@ghbot.com
+2020-06-08T18:48:12Z
+
+mostly
+=
+hello@ghbot.com
+2020-06-08T18:47:16Z
+
+Use the bp framework on the media manager grid
+Alex Bea
+abea@mailbox.org
+2020-06-05T19:34:37Z
+
+Introduces a basic CSS breakpoint framework
+Alex Bea
+abea@mailbox.org
+2020-06-05T19:34:13Z
+
+Fixes listeners and input bugs (#92)
+GitHub
+noreply@github.com
+2020-06-05T18:16:58Z
+
+Adds vue eslint plugin and starts linting (#90)
+
+* Adds vue eslint plugin
+
+* vue eslint fixes part 1
+
+* npm audit fix
+
+* Makes storybook command available on npm run dev
+
+* the linting continues
+
+* More and more linting
+
+* a hunk of more linting
+GitHub
+noreply@github.com
+2020-06-04T19:13:58Z
+
+*** apostrophecms/apostrophe-forms-submit-google
+Updates the README instructions (#7)
+GitHub
+noreply@github.com
+2020-06-12T14:46:16Z
+
+Merge pull request #6 from apostrophecms/fix-get-first-sheet
+
+removed leftover stub that emptied the sheet variable, also do not ca…
+GitHub
+noreply@github.com
+2020-06-05T19:10:35Z
+
+removed leftover stub that emptied the sheet variable, also do not call apos.notify with no user
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-04T12:19:36Z
+
+*** apostrophecms/apostrophe-website
+Merge pull request #25 from apostrophecms/blog-callout-quote
+
+Blog callout quote
+GitHub
+noreply@github.com
+2020-06-16T18:59:49Z
+
+Merge pull request #56 from apostrophecms/linkedin-fix
+
+Linkedin fix
+GitHub
+noreply@github.com
+2020-06-11T20:02:05Z
+
+Fix linkedin file name pt 2
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-11T20:00:36Z
+
+Fix linkedin file name pt 1
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-11T20:00:20Z
+
+Merge pull request #55 from apostrophecms/footer-social-icons
+
+Footer social icons
+GitHub
+noreply@github.com
+2020-06-11T18:34:44Z
+
+Remove generated file
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-11T18:32:45Z
+
+Update image build locations
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-11T18:28:11Z
+
+Webpack fix
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T21:09:34Z
+
+Update webpack
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T19:53:41Z
+
+Template social icons
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T19:42:21Z
+
+Remove badges macro
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T19:12:07Z
+
+Add social icons to footer, update image build location
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T19:09:36Z
+
+Fix linting error
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T17:52:48Z
+
+Merge remote-tracking branch 'origin/master' into footer-social-icons
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T17:34:18Z
+
+Merge remote-tracking branch 'origin/blog-callout-quote' into blog-callout-quote
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T17:32:26Z
+
+block quote update
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T00:23:01Z
+
+Merge remote-tracking branch 'origin/master' into blog-callout-quote
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-09T22:19:21Z
+
+Merge pull request #52 from apostrophecms/remove-footer-items
+
+Remove badges from footer
+GitHub
+noreply@github.com
+2020-06-09T22:18:18Z
+
+Merge pull request #54 from apostrophecms/google-tag-manager
+
+Add Google Tag Manager
+GitHub
+noreply@github.com
+2020-06-09T22:17:51Z
+
+Merge pull request #53 from apostrophecms/image-caption-location
+
+Fix image caption alignment
+GitHub
+noreply@github.com
+2020-06-09T22:16:46Z
+
+social icon progress
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-09T18:11:12Z
+
+Add Google Tag Manager
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-05T06:24:46Z
+
+Fix image caption alignment
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-05T06:03:50Z
+
+Remove widgets from footer
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-05T05:52:27Z
+
+updates packages (#51)
+GitHub
+noreply@github.com
+2020-06-03T17:14:21Z
+
+Merge pull request #50 from apostrophecms/style-fixes
+
+Fix blog post styles
+GitHub
+noreply@github.com
+2020-06-03T17:13:04Z
+
+*** apostrophecms/ecg-bolt
+Merge pull request #313 from apostrophecms/feature/popular-location-link-fix
+
+Fix string replace assigment
+GitHub
+noreply@github.com
+2020-06-17T08:28:24Z
+
+Popular locations link in production
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-17T08:25:20Z
+
+Fix string replace assigment
+Edmond Wang
+ywang53@ebay.com
+2020-06-17T06:48:01Z
+
+Fix linter issue in categories-pages
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-16T08:27:59Z
+
+Release 0.2.0
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-16T07:57:10Z
+
+Merge pull request #305 from apostrophecms/104-popular-locations-link
+
+Popular locations link in production
+GitHub
+noreply@github.com
+2020-06-15T08:19:22Z
+
+Popular locations link in production
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-15T08:18:45Z
+
+Merge pull request #308 from apostrophecms/98-video-fix
+
+center video title
+GitHub
+noreply@github.com
+2020-06-12T20:18:56Z
+
+center video title
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T20:17:26Z
+
+Merge pull request #307 from apostrophecms/98-video-fix
+
+Adjust video height
+GitHub
+noreply@github.com
+2020-06-12T19:52:26Z
+
+Adjust video height
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T19:51:04Z
+
+Merge pull request #306 from apostrophecms/98-video-fix
+
+Video fix
+GitHub
+noreply@github.com
+2020-06-12T19:28:21Z
+
+center video
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T19:21:17Z
+
+Remove comment
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T18:34:49Z
+
+gumtree video fix
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T18:33:19Z
+
+Video fix
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T17:35:24Z
+
+Merge pull request #304 from apostrophecms/97-accordion-padding
+
+Fix accordion padding
+GitHub
+noreply@github.com
+2020-06-12T14:57:50Z
+
+Fix accordion padding
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-12T00:03:11Z
+
+Merge pull request #303 from apostrophecms/109-slider-fix
+
+Fix map slider
+GitHub
+noreply@github.com
+2020-06-11T18:14:39Z
+
+fix filter sizes
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-11T17:58:57Z
+
+Merge pull request #302 from apostrophecms/feature/include-neighborhood-title-into-html
+
+Include location name into the html of neighborhood page
+GitHub
+noreply@github.com
+2020-06-11T08:36:48Z
+
+Merge pull request #298 from apostrophecms/feature/make-survey-type-editable
+
+Restore schema changes
+GitHub
+noreply@github.com
+2020-06-11T08:36:13Z
+
+Add help text
+Edmond Wang
+ywang53@ebay.com
+2020-06-11T07:36:20Z
+
+code review request
+Edmond Wang
+ywang53@ebay.com
+2020-06-11T01:09:00Z
+
+Fix map slider
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-10T21:03:35Z
+
+Merge pull request #301 from apostrophecms/promotions-fix
+
+Fix promotion height
+GitHub
+noreply@github.com
+2020-06-10T17:31:26Z
+
+Merge pull request #300 from apostrophecms/enable-video-player
+
+turn on the lean video player otherwise there is no video player logg…
+GitHub
+noreply@github.com
+2020-06-10T16:16:52Z
+
+Merge pull request #299 from apostrophecms/load-img-before-building-base64-url
+
+Load img before building base64 url
+GitHub
+noreply@github.com
+2020-06-10T14:46:30Z
+
+Include location name into the html of neighborhood page
+Edmond Wang
+ywang53@ebay.com
+2020-06-10T09:47:56Z
+
+Fix promotion height
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-09T22:15:52Z
+
+turn on the lean video player otherwise there is no video player logged out
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T20:54:26Z
+
+fire in all cases
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T20:42:20Z
+
+load the img fully before we try to build a base64 url for it
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-09T20:35:16Z
+
+restore schema changes
+Edmond Wang
+ywang53@ebay.com
+2020-06-09T10:03:23Z
+
+Categories survey: revert to simple choices
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-09T08:12:25Z
+
+Merge pull request #296 from apostrophecms/feature/make-survey-type-editable
+
+Feature/make label of survey type editable
+GitHub
+noreply@github.com
+2020-06-09T07:48:10Z
+
+Merge pull request #297 from apostrophecms/579-intentions-menu-404-search
+
+Intentions menu: remove empty form attributes to avoid search error
+GitHub
+noreply@github.com
+2020-06-09T07:34:55Z
+
+Camel Case
+Edmond Wang
+ywang53@ebay.com
+2020-06-09T02:05:37Z
+
+Intentions menu: remove empty form attributes to avoid search error
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-08T13:14:25Z
+
+Merge pull request #295 from apostrophecms/584-intentions-menu-scrolling-locations
+
+Intentions menu location on mobile
+GitHub
+noreply@github.com
+2020-06-08T08:42:14Z
+
+rename label
+Edmond Wang
+ywang53@ebay.com
+2020-06-08T04:03:21Z
+
+Choice One
+Edmond Wang
+ywang53@ebay.com
+2020-06-08T03:47:39Z
+
+Intentions menu location on mobile: disable regions scroll while enable cities scroll
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-05T16:58:59Z
+
+Vivanuncios format number on popular locations
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-05T09:41:35Z
+
+Merge pull request #293 from apostrophecms/571-neighborhood-info-data
+
+Vivanuncios info data: format number
+GitHub
+noreply@github.com
+2020-06-05T09:08:14Z
+
+Merge pull request #294 from apostrophecms/multiple-fixes
+
+bug fixes
+GitHub
+noreply@github.com
+2020-06-05T09:07:41Z
+
+Vivanuncios: lightbox when superior z-index than map markers
+to avoid map markers to above displayed images
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-05T09:07:04Z
+
+Vivanuncios info data: format number with a filter
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-05T07:53:52Z
+
+bug fixes
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-04T22:15:21Z
+
+Merge pull request #292 from apostrophecms/580-intentions-menu-search-button
+
+Intentions menu: display search icon in "More" tab
+GitHub
+noreply@github.com
+2020-06-04T16:42:09Z
+
+Vivanuncios info data: format number
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-04T16:39:17Z
+
+Merge pull request #290 from apostrophecms/577-hidden-content
+
+fix hidden content
+GitHub
+noreply@github.com
+2020-06-04T15:27:00Z
+
+Merge pull request #289 from apostrophecms/574-mobile-lightbox-tile
+
+update mobile lightbox
+GitHub
+noreply@github.com
+2020-06-04T15:26:44Z
+
+Merge pull request #288 from apostrophecms/576-survey-spacing
+
+Add mobile survey spacing
+GitHub
+noreply@github.com
+2020-06-04T15:26:28Z
+
+Merge pull request #287 from apostrophecms/575-expand-text
+
+Add dynamic expand text
+GitHub
+noreply@github.com
+2020-06-04T15:26:14Z
+
+Intentions menu: display search icon in "More" tab
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-04T15:13:06Z
+
+Merge pull request #291 from apostrophecms/572-tabbed-listing-title
+
+Tabbed Listing widget: location name
+GitHub
+noreply@github.com
+2020-06-04T15:08:58Z
+
+Tabbed Listing widget: location name
+Anthony Tarlao
+anthony.tarlao@gmail.com
+2020-06-04T09:23:01Z
+
+fix hidden content
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-04T08:00:05Z
+
+update mobile lightbox
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-04T07:44:44Z
+
+Add mobile survey spacing
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-04T07:24:01Z
+
+Add dynamic expand text
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-04T07:16:51Z
+
+Merge pull request #286 from apostrophecms/573-places-links-new-tab
+
+open places links in new tab
+GitHub
+noreply@github.com
+2020-06-03T21:00:37Z
+
+open places links in new tab
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-03T20:51:39Z
+
+Merge pull request #285 from apostrophecms/min-hero-height-fix
+
+Min hero height fix
+GitHub
+noreply@github.com
+2020-06-03T20:39:56Z
+
+Reduce min hero height
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-03T20:35:35Z
+
+Reduce min hero height
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-03T20:35:03Z
+
+Reduce min hero height
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-03T20:33:40Z
+
+Merge pull request #282 from apostrophecms/square-link-blocks
+
+Square link blocks
+GitHub
+noreply@github.com
+2020-06-03T19:45:19Z
+
+Merge pull request #283 from apostrophecms/568-popular-locations-prices
+
+Popular locations: widget only
+GitHub
+noreply@github.com
+2020-06-03T19:42:58Z
+
+Merge pull request #284 from apostrophecms/536-hidden-toolbar-fix
+
+Show two column widget title toolbar in modal
+GitHub
+noreply@github.com
+2020-06-03T19:32:37Z
+
+Show two column widget title toolbar in modal
+Brendon Reyell
+brendon@apostrophecms.com
+2020-06-03T19:09:57Z
+
+*** apostrophecms/apostrophe-guides
+formatting
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-15T18:14:13Z
+
+test page data
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-15T14:55:15Z
+
+test extensions
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-15T14:06:31Z
+
+rename
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-15T13:12:57Z
+
+template tests
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T21:12:18Z
+
+template tests
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T20:45:53Z
+
+add tests
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T20:21:05Z
+
+formatting
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T20:20:40Z
+
+Merge branch 'master' of github.com:apostrophecms/apostrophe-guides
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T20:18:33Z
+
+update template example
+GitHub
+noreply@github.com
+2020-06-12T14:30:24Z
+
+fix formatting
+GitHub
+noreply@github.com
+2020-06-12T14:27:43Z
+
+spacing
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T14:00:34Z
+
+move inline templates to seperate files so they can be overridden and tested a little easier
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T13:42:35Z
+
+spacing
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T13:32:31Z
+
+documentation and a couple tweaks based on writing the docs
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-12T13:20:36Z
+
+allow the header template to be overwritten
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-11T18:05:14Z
+
+allow the footer to be optional
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-11T16:08:24Z
+
+anchor links in docs
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-11T16:00:40Z
+
+move markdown stuff to a subdir, add syntax highlighting
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-11T14:22:31Z
+
+icon examples
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-11T13:55:52Z
+
+update font
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-11T12:28:24Z
+
+font demos
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T22:44:38Z
+
+color swatches
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T21:02:17Z
+
+rename, pages seems a bit clearer
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T17:53:32Z
+
+improve the example regex
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T17:46:52Z
+
+join the path
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T15:18:08Z
+
+drop templates, we'll parse the file instead
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T14:59:37Z
+
+update to Apostrophe
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T13:46:37Z
+
+add missing editorconfig
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T13:46:26Z
+
+add a footer option to add an element to all pages
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-10T13:46:09Z
+
+ditch the useless example styles
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-09T21:53:17Z
+
+scale down images
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-09T21:52:48Z
+
+fine tune search results
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-09T21:52:32Z
+
+search results
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-09T20:37:18Z
+
+make sure the active key updates on routes
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-08T18:36:00Z
+
+iframe demo examples
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-05T22:45:00Z
+
+add istanbul config
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-05T21:25:21Z
+
+ensure ordering works and a mix of files and globs does too
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-05T20:50:46Z
+
+console error instead of log when error
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-05T13:33:13Z
+
+path seems more appopriate
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-05T13:32:39Z
+
+add coverage tool
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T22:20:30Z
+
+add test for remaining utils
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T22:20:17Z
+
+move set active to utils
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T19:27:33Z
+
+add a default title
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T19:27:16Z
+
+warn if there's no docs configured, otherwise this is kinda pointless
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T19:26:59Z
+
+pass options to docs so we can add the correct url to data, move marked to utils
+
+pass options to docs so we can add the correct url to data, move marked to utils
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T19:26:03Z
+
+clean up construct
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T17:54:28Z
+
+fix demos
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T17:52:09Z
+
+page is already being reset
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T16:25:44Z
+
+scaffolding and clean up
+Greg van Brug
+gvb@apostrophecms.com
+2020-06-04T15:57:17Z
+
+*** apostrophecms/apostrophe-forms-phone-field-widgets
+cleaned up
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-12T14:53:24Z
+
+pared back
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-12T14:52:55Z
+
+docs
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-11T20:32:03Z
+
+first working version
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-11T19:52:05Z
+
+*** apostrophecms/apostrophe-backup
+initial commit
+Thomas Boutell
+tom@apostrophecms.com
+2020-06-14T21:07:38Z
+
