@@ -20,14 +20,14 @@ async function go() {
       let page = 1;
       while (true) {
         const params = {
-          page,
-          access_token: config.token
+          page
         };
         const url = `https://api.github.com/orgs/${org}/repos?${qs.stringify(params)}`;
         const repos = await request(url, { 
           json: true,
           headers: {
-            'User-Agent': 'changelog-scanner'
+            'User-Agent': 'changelog-scanner',
+            'Authorization': `token ${config.token}`
           },
         });
         allRepos = allRepos.concat(repos.map(repo => `${org}/${repo.name}`));
@@ -43,14 +43,14 @@ async function go() {
       while (true) { 
         const params = {
           page,
-          since,
-          access_token: config.token
+          since
         };
         const url = `https://api.github.com/repos/${repo}/commits?${qs.stringify(params)}`;
         const commits = await request(url, { 
           json: true,
           headers: {
-            'User-Agent': 'changelog-scanner'
+            'User-Agent': 'changelog-scanner',
+            Authorization: `token ${config.token}`
           },
         });
         allCommits = allCommits.concat(commits);
