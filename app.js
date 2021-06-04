@@ -8,7 +8,8 @@ let team = [];
 let allRepos = [];
 
 const since = argv.since;
-if (!since) {
+
+if (!since || typeof since !== 'string') {
   console.error('Usage: --since=YYYY-MM-DD');
   process.exit(1);
 }
@@ -24,7 +25,7 @@ async function go() {
           access_token: config.token
         };
         const url = `https://api.github.com/orgs/${org}/repos?${qs.stringify(params)}`;
-        const repos = await request(url, { 
+        const repos = await request(url, {
           json: true,
           headers: {
             'User-Agent': 'changelog-scanner'
@@ -40,14 +41,14 @@ async function go() {
     for (const repo of allRepos) {
       let page = 1;
       let allCommits = [];
-      while (true) { 
+      while (true) {
         const params = {
           page,
           since,
           access_token: config.token
         };
         const url = `https://api.github.com/repos/${repo}/commits?${qs.stringify(params)}`;
-        const commits = await request(url, { 
+        const commits = await request(url, {
           json: true,
           headers: {
             'User-Agent': 'changelog-scanner'
