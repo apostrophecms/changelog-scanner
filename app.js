@@ -59,8 +59,7 @@ async function go() {
       while (true) {
         const params = {
           page,
-          since,
-          'Authorization': `token ${config.token}`
+          since
         };
         const url = `https://api.github.com/repos/${repo}/commits?${qs.stringify(params)}`;
         const commits = await request(url, {
