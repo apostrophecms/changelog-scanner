@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "boring": "^1.0.0",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
   },
