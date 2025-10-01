@@ -1,19 +1,17 @@
-A simple tool to list all commit messages since a given date in the default branch of all repos in a github organization or organizations. Great for catching omissions in release announcements and changelogs.
+A simple tool to list all commit messages since a given date in the default branch of all repos in a github organization or organizations. For those who release npm packages on a regular cadence, this is great for catching omissions in release announcements and changelogs.
 
 ## Installation
 
 ```
-npm install
+npm install -g @apostrophecms/changelog-scanner
 ```
-
-## Configuration
-
-Copy `config.js.example` to `config.js` and edit it. See the provided comments.
 
 ## Usage
 
+Make sure `GITHUB_ACCESS_TOKEN` is set in your environment. Then:
+
 ```
-node app --since=2020-06-01
+changelog-scanner orgname1 orgname2 orgname3... --since=2025-09-01
 ```
 
 ### Additional options
