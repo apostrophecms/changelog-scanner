@@ -55,6 +55,14 @@ Fetch commits since this date.
 changelog-scanner myorg --since=2025-09-01
 ```
 
+### `--names` (optional)
+
+Print only the names of repos that have commits in the given period, one per line. Useful for piping into other tools or quickly seeing what changed.
+
+```bash
+changelog-scanner myorg --since=2025-09-01 --names
+```
+
 ### `--sort=<method>` (optional)
 
 Sort repositories by:
