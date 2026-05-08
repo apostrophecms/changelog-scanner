@@ -7,6 +7,9 @@ const results = {};
 let team = [];
 let allRepos = [];
 
+// NEW: flag to only print repo names that have changes
+const namesOnly = !!argv.names; // use: --names
+
 const since = argv.since;
 const sort = argv.sort || 'created';
 
@@ -27,19 +30,20 @@ go();
 async function go() {
   try {
     for (const org of orgs) {
-      console.log('⏳ Collecting repos for', org);
+      if (!namesOnly) console.log('⏳ Collecting repos for', org);
       let page = 1;
       while (true) {
         const params = {
           page,
-          sort
+          sort,
+          per_page: 100 // fewer requests
         };
         const url = `https://api.github.com/orgs/${org}/repos?${qs.stringify(params)}`;
 
         const repos = await get(url);
 
         if (!Array.isArray(repos)) {
-          console.error('Error retrieving repos:', repos);
+          if (!namesOnly) console.error('Error retrieving repos:', repos);
           return;
         }
 
@@ -47,43 +51,51 @@ async function go() {
         if (!repos.length) {
           break;
         }
-        console.log(`⏳ ${repos.length} repos found. Checking for more...`)
+        if (!namesOnly) console.log(`⏳ ${repos.length} repos found. Checking for more...`);
         page++;
       }
 
-      console.log(`⏳ Found ${allRepos.length} repos for ${org}`)
+      if (!namesOnly) console.log(`⏳ Found ${allRepos.length} repos for ${org}`);
     }
 
     for (const repo of allRepos) {
-      console.log(`⏳ Checking commits for ${repo}`)
+      if (!namesOnly) console.log(`⏳ Checking commits for ${repo}`);
       let page = 1;
       let allCommits = [];
       while (true) {
         const params = {
           page,
-          since
+          since,
+          per_page: 100
         };
         const url = `https://api.github.com/repos/${repo}/commits?${qs.stringify(params)}`;
         const commits = await get(url);
+        if (!Array.isArray(commits)) break;
         allCommits = allCommits.concat(commits);
-        if (!commits.length) {
+        if (!commits.length || commits.length < 100) {
           break;
         }
         page++;
       }
+
       if (allCommits.length) {
-        console.log(`💁🏼‍♀️ ${repo} ***`);
-        for (const commit of allCommits) {
-          console.log(commit.commit.message);
-          console.log(commit.commit.committer.name);
-          console.log(commit.commit.committer.email);
-          console.log(commit.commit.committer.date);
-          console.log();
+        if (namesOnly) {
+          // ONLY the repo name, one per line
+          console.log(repo);
+        } else {
+          console.log(`💁🏼‍♀️ ${repo} ***`);
+          for (const commit of allCommits) {
+            console.log(commit.commit.message);
+            console.log(commit.commit.committer.name);
+            console.log(commit.commit.committer.email);
+            console.log(commit.commit.committer.date);
+            console.log();
+          }
         }
       }
     }
   } catch (e) {
-    console.error(e);
+    if (!namesOnly) console.error(e);
     process.exit(1);
   }
 }
@@ -95,6 +107,10 @@ async function get(url) {
       'Authorization': `token ${token}`
     }
   });
+  // 409 means empty repo (e.g. security advisory repos with no commits) — treat as no results
+  if (response.status === 409) {
+    return [];
+  }
   if (response.status >= 400) {
     throw response;
   }
@@ -103,7 +119,7 @@ async function get(url) {
 }
 
 function usage() {
-  console.error('Usage: changelog-scanner org1 org2 org3... --since=YYYY-MM-DD');
+  console.error('Usage: changelog-scanner org1 org2 org3... --since=YYYY-MM-DD [--names]');
   console.error('You must also make sure GITHUB_ACCESS_TOKEN is set in your environment.');
   process.exit(1);
 }
