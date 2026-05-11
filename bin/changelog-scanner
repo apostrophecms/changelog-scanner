@@ -12,6 +12,7 @@ const namesOnly = !!argv.names; // use: --names
 
 const since = argv.since;
 const sort = argv.sort || 'created';
+const branch = argv.branch;
 
 const orgs = argv._;
 if (orgs.length < 1) {
@@ -68,6 +69,9 @@ async function go() {
           since,
           per_page: 100
         };
+        if (branch) {
+          params.sha = branch;
+        }
         const url = `https://api.github.com/repos/${repo}/commits?${qs.stringify(params)}`;
         const commits = await get(url);
         if (!Array.isArray(commits)) break;
@@ -111,6 +115,10 @@ async function get(url) {
   if (response.status === 409) {
     return [];
   }
+  // 404 when fetching commits typically means the requested branch doesn't exist in this repo — skip it
+  if (response.status === 404 && branch) {
+    return [];
+  }
   if (response.status >= 400) {
     throw response;
   }
@@ -119,7 +127,7 @@ async function get(url) {
 }
 
 function usage() {
-  console.error('Usage: changelog-scanner org1 org2 org3... --since=YYYY-MM-DD [--names]');
+  console.error('Usage: changelog-scanner org1 org2 org3... --since=YYYY-MM-DD [--branch=branch-name] [--names]');
   console.error('You must also make sure GITHUB_ACCESS_TOKEN is set in your environment.');
   process.exit(1);
 }
