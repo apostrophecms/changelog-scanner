@@ -63,6 +63,14 @@ Print only the names of repos that have commits in the given period, one per lin
 changelog-scanner myorg --since=2025-09-01 --names
 ```
 
+### `--branch=<branch-name>` (optional)
+
+Scan a specific branch across all repositories instead of each repo's default branch. Repositories that do not have the specified branch are silently skipped.
+
+```bash
+changelog-scanner myorg --since=2025-09-01 --branch=develop
+```
+
 ### `--sort=<method>` (optional)
 
 Sort repositories by:
